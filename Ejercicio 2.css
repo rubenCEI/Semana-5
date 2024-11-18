@@ -1,0 +1,18 @@
+
+
+
+.Parraph1{
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+    left: -24vw;
+    top: -50px;
+}
+
+.Parraph2{
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+    left: 24vw;
+    top: 50px;
+}
