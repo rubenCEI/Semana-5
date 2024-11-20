@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100vh;
+    padding: 10vh;
     gap: 20px;
 }
 
@@ -67,6 +67,96 @@ body{
 .BoxMarginContainer{
     border-radius: 10px;
     border: solid 3px black;
-    height: 10vh;
-    width: 10vw;
+    height: 50vh;
+    width: 50vw;
+    padding: 50px;
+}
+
+.BoxMarginContainer div{
+    border-radius: 10px;
+    border: solid 3px black;
+    height: 100%;
+    width: 100%;
+}
+
+.ParaphContainer{
+    border-radius: 10px;
+    border: solid 3px black;
+    height: 50vh;
+    width: 50vw;
+    padding: 50px;
+}
+
+.ParaphContainer p{
+    text-align: center;
+    text-decoration: underline;
+    text-indent: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-shadow: 2px 2px 2px #aaa;
+    color: #333;
+}
+
+.ContainerBlendModes{
+    background-color: darkolivegreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ContainerBlendModes .ImgBox{
+border: dashed white 2px;
+}
+
+.aa img{mix-blend-mode: normal;}
+.bb img{mix-blend-mode: multiply;}
+.cc img{mix-blend-mode: screen;}
+.dd img{mix-blend-mode: overlay;}
+.ee img{mix-blend-mode: darken;}
+.ff img{mix-blend-mode: lighten;}
+.gg img{mix-blend-mode: color-dodge;}
+.hh img{mix-blend-mode: color-burn;}
+.ii img{mix-blend-mode: hard-light;}
+.jj img{mix-blend-mode: soft-light;}
+.kk img{mix-blend-mode: difference;}
+.ll img{mix-blend-mode: exclusion;}
+.mm img{mix-blend-mode: hue;}
+.nn img{mix-blend-mode: saturation;}
+.oo img{mix-blend-mode: color;}
+.pp img{mix-blend-mode: luminosity;}
+
+.DivRotationContainer{
+    padding: 10vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 40dvw;
+    height: 40dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.DivRotationContainer div{
+    border-radius: 5px;
+    height: 20vh;
+    width: 20vh;
+
+}
+
+.DivRotationContainer .aaa{
+    background-color: darkmagenta;
+    transform: rotatez(10deg) rotateY(10deg);
+}
+.DivRotationContainer .bbb{
+    background-color: cadetblue;
+    transform:rotatez(20deg) rotateY(20deg);
+}
+.DivRotationContainer .ccc{
+    background-color: darkseagreen;
+    transform:rotatez(40deg) rotateY(40deg);
+
 }
