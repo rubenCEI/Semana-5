@@ -132,8 +132,6 @@ border: dashed white 2px;
     padding: 10vh;
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    width: 40dvw;
-    height: 40dvh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -144,19 +142,37 @@ border: dashed white 2px;
     border-radius: 5px;
     height: 20vh;
     width: 20vh;
-
 }
 
 .DivRotationContainer .aaa{
     background-color: darkmagenta;
-    transform: rotatez(10deg) rotateY(10deg);
+    transform:  rotateY(10deg) rotatez(10deg);
 }
 .DivRotationContainer .bbb{
     background-color: cadetblue;
-    transform:rotatez(20deg) rotateY(20deg);
+    transform: rotateY(20deg) rotatez(20deg);
 }
 .DivRotationContainer .ccc{
     background-color: darkseagreen;
-    transform:rotatez(40deg) rotateY(40deg);
+    transform: rotateY(40deg) rotatez(40deg);
+}
 
+.GradientContainer{
+    padding: 10vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.GradientContainer div{
+    border-radius: 5px;
+    height: 20vh;
+    width: 20vh;
+}
+
+.Gradient .aaaa{
+    background: linear-gradient(left,red , green);
 }
