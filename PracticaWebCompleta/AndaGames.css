@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: o;
+    margin: 0;
+}
+
+body{
+    font-family: "Space Grotesk";
+    /*background: url(Img/Azulejos.jpg);*/
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background-image: url(Img/Azulejos.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 50%;
+    opacity: 0.2;
+}
+
+.Body.Background{
+    position: absolute;
+}
+
+.Logo{
+    background-color: white;
+    color: green;
+    height: 25vh;
+    border-bottom: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo h1{
+    font-size: 10vh;
+}
+
+.MainNav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 10vh;
+}
+
+.MainNav a{
+    text-decoration: none;
+    color: green;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.LandingSection{
+    width: 90vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+}
+
+.Article{
+    display: flex;
+    flex-direction: row;
+}
+
+.Cover.Article{grid-area: 1 / 1 / 3 / 3;}
+
+.Article.a{grid-area: 1 / 3 / 2 / 4;}
+
+.Article.b{grid-area: 2 / 4 / 3 / 5;}
+
+.Article .ImageContainer{
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+}
+
+.Article .ArticleFirstParaph{
+    width: 50%;
+}
+
+.Img1{
+    background-image: url(Img/El\ penitente.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 70%;
+}
+.Img2{
+    background-image: url(Img/7metersaway.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.Img3{
+    background-image: url(Img/moonlighter.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.Article .ImageContainer .ArticleTitleContainer{
+ background: linear-gradient(rgba(0, 100, 0, 0), rgb(0, 68, 0));
+ padding: 15px;
+}
+
+.Article .ImageContainer .ArticleTitle{
+    font-size: 30px;
+}
+.Article .ImageContainer .ArticleSubtitle{
+    font-size: 20px;
+}
+
+.ArticleFirstParaph{
+    padding: 10px;
+}
